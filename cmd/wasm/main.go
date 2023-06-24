@@ -5,7 +5,7 @@ import (
 	"syscall/js"
 )
 
-var htmlString = `<H2>TEST</H2>`
+var htmlString = `<H2>TEST!!</H2>`
 
 func GetHTML() js.Func {
 	return js.FuncOf(func(this js.Value, args []js.Value) interface{} {
