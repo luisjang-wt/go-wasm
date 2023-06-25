@@ -9,7 +9,8 @@ var htmlString = `<H2>TEST!!</H2>`
 
 func GetHTML() js.Func {
 	return js.FuncOf(func(this js.Value, args []js.Value) interface{} {
-		return htmlString
+		fmt.Println(args[0])
+		return args[0]
 	})
 }
 
